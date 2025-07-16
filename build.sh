@@ -1,3 +1,3 @@
 #!/bin/bash
-# Install Python packages
-pip install -r requirements.txt 
+# Install Python packages using pyproject.toml
+pip install . 
