@@ -5,7 +5,7 @@ from typing import List, Optional
 import requests
 import os
 import pandas as pd
-from ml_models import predict_linear_regression, predict_moving_average, predict_random_forest, predict_prophet
+from ml_models import predict_linear_regression, predict_moving_average, predict_random_forest
 from datetime import datetime, timedelta
 import json
 import numpy as np
@@ -108,7 +108,6 @@ def predict_summary(request: PredictRequest):
         "linear_regression": predict_linear_regression,
         "moving_average": predict_moving_average,
         "random_forest": predict_random_forest,
-        "prophet": predict_prophet,
     }
     if request.model not in model_map:
         raise HTTPException(status_code=400, detail="Model not supported.")
