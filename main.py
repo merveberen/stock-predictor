@@ -23,7 +23,7 @@ app.add_middleware(
 )
 
 # Polygon.io API key (set your key here or use environment variable)
-POLYGON_API_KEY = os.getenv("POLYGON_API_KEY", "HhBBxnV4WKUzoE08bEJXNgU3JoutncqA")
+POLYGON_API_KEY = os.getenv("POLYGON_API_KEY")
 
 ALLOWED_SYMBOLS = [
     "AAPL", "MSFT", "AMZN", "GOOGL", "META", "NVDA", "TSLA", "BRK.B", "JPM", "V", "JNJ", "UNH", "XOM", "WMT", "PG", "MA", "CVX", "HD", "KO", "PFE", "PEP", "ABBV", "MRK", "COST", "DIS", "MCD", "INTC", "CSCO", "CMCSA", "GLD", "SLV", "USO", "SPY", "IWM", "EFA", "EEM"
